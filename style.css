@@ -1,0 +1,378 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header part */
+
+.header{
+    margin: 90px 120px;
+}
+
+.mobile-menu{
+    display: none;
+    height: 24px;
+    width: 24px;
+}
+
+.mobile-menu img{
+    width: 100%;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.header-top,
+ul,
+.heading-right-display{
+    display: flex;
+    align-items: center;
+}
+
+.header-top{
+    justify-content: space-between;
+}
+
+ul,
+.heading-right-display{
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.search-logo,
+.store{
+    height: 36px;
+    width: 36px;
+}
+
+.search-logo img,
+.store img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.banner{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-camera{
+    height: 450px;
+    width: 450px;
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 25px;
+    padding-left: 10px;
+}
+
+.banner-heading{
+    font-size: 48px;
+}
+
+.banner-para{
+    margin: 16px 0;
+}
+
+.banner-btn{
+    padding: 5px 15px;
+    color: white;
+    background-color: #E02C6D;
+    border: 0;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Logo section */
+
+
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 35px 60px;
+    margin: 170 165 100 165;
+}
+
+.logo{
+    height: 50px;
+    width: 55px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* collection section */
+
+.collection{
+    margin: 100px 200px;
+
+}
+
+.collection h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.rating-star{
+    height: 15px;
+    width: 15px;
+}
+
+.rating-star img{
+    width: 100%;
+}
+
+.rating{
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px 0;
+}
+
+.rating p{
+    margin-left: 10px;
+}
+
+.price{
+    font-size: 28px;
+}
+
+.collection-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.collection-wrapper{
+    height: 450px;
+    width: 330px;
+    padding: 15px;
+    margin: 25px;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.205);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* feature section */
+
+.feature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    margin: 125px 165px;
+}
+
+.feature-para{
+    margin: 16px 0;
+}
+
+.feature-btn{
+    padding: 10px 25px;
+    color: white;
+    background-color: #E02C6D;
+    border: 0;
+}
+
+
+
+
+/* footer section  */
+
+footer{
+    padding: 50px 500px;
+    background-color: #0a0826;
+    color: white;
+    text-align: center;
+}
+
+.social-media div{
+    height: 32px;
+    width: 32px;
+}
+
+.social-media-icon{
+    width: 100%;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------
+           Mobile phone styles
+--------------------------------------- */
+
+@media only screen and (max-width: 576px) {
+    
+    
+    
+    /* header section  */
+    
+    
+    
+    .header{
+        margin: 30px 5px;
+    }
+    
+    nav{
+        display: none;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .search-logo{
+        display: none;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .main-camera{
+        width: 250px;
+        height: 250px;
+    }
+
+    .main-camera img{
+        width: 100%;
+    }
+
+    .banner-heading{
+        font-size: 36px;
+    }
+
+
+    /* logo section  */
+
+    .logos{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+
+    /* collection section  */
+
+    .collection-container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .collection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+
+    /* feature section  */
+
+    .feature{
+        flex-direction: column-reverse;
+        margin: 20px;
+    }
+
+    .feature-description{
+        text-align: center;
+    }
+
+
+    /* footer section  */
+
+    footer{
+        padding: 10px;
+        margin-top: 100px;
+    }
+
+}
+
